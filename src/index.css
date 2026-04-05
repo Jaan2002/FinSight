@@ -2,47 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base styles */
 body {
- @apply bg-gray-100 text-gray-800;
+  background-color: #f3f4f6; /* gray-100 */
+  color: #1f2937; /* gray-800 */
   font-family: Inter, sans-serif;
 }
 
+/* Dark mode */
 .dark {
-  @apply bg-gray-900 text-white;
+  background-color: #111827; /* gray-900 */
+  color: white;
 }
 
+/* Card */
 .card {
-  @apply bg-white p-5 rounded-2xl shadow-sm;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .dark .card {
-  @apply bg-gray-800 text-gray-100;
+  background-color: #1f2937;
+  color: white;
 }
 
+/* Input */
 .input {
-  @apply p-3 border rounded-lg w-full bg-white text-black;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 100%;
 }
 
 .dark .input {
-  @apply bg-gray-700 text-white border-gray-600;
+  background-color: #374151;
+  color: white;
+  border-color: #4b5563;
 }
 
+/* Button */
 .btn {
-  @apply px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: white;
+  transition: 0.2s;
 }
 
-.input {
-  @apply p-3 border rounded-lg w-full transition;
+.btn:hover {
+  background-color: #2563eb;
 }
 
-.dark .input {
-  @apply bg-gray-700 text-white border-gray-600;
-}
-
+/* Table */
 .table th {
-  @apply text-left p-3 border-b text-gray-500;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #6b7280;
 }
 
 .table td {
-  @apply p-3 border-b;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
 }
