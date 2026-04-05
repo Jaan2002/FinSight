@@ -7,7 +7,7 @@ This application helps users track transactions, visualize spending, and manage 
 
 ## Live Demo
 
-👉 https://your-project-name.vercel.app
+👉 https://fintracker-portal.vercel.app/
 
 ---
 
